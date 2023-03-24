@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+
+    .card {
+        @apply mb-5 block rounded-md border-white shadow-md w-[220px] h-[300px];
+      }
+      .mygrid {
+        @apply xxs:grid-cols-2 xs:grid-cols-3 s:grid-cols-3  md:grid-cols-3 lg:grid-cols-4 ;
+      }
+
+    .bounceupCtm{
+        animation: bounce 6s linear infinite
+      }
+
+      @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .spinCtm{
+        animation: spin 3s linear infinite;
+    }
+}
